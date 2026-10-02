@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Button Components</title>
+
+    <style>
+
+
+        /* layout and text sizing */
+
+        html {
+
+            font-family: inter;
+         
+        }
+
+        body {
+
+            margin: 0;;
+        }
+
+
+        .Button-Layout-Container {
+
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            flex-wrap: wrap;
+         
+        }
+
+
+        .Assignmenet-Header  {
+
+            font-weight: 600;
+            line-height: 30px;
+            color: black;
+     
+            
+
+        }
+
+        .Button-Header {
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #101828;
+        }
+
+        .Button-container {
+
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        /* Button componenets */
+
+        .Button-Primary  {
+
+            .Button-Header--Primary {
+                color: dodgerblue;
+            }
+
+            .Button-Primary--box {
+                background-color: dodgerblue;
+                color: white;
+                border-radius: 10px;
+                border: 1px solid black;
+                 padding: 20px 12px;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .Button-Primary--box:hover {
+
+                transform: scale(1.1);
+                transition: ease-in-out 0.2s;
+                
+                
+            }   
+            
+        }
+
+
+
+        .Button-Secondary  {
+
+            .Button-Secondary--Header {
+                color: darkblue;
+            }            
+
+            .Button-Secondary--box {
+                background-color: darkblue;
+                color: white;
+                border-radius: 10px;
+                border: 1px solid #D0D5DD;
+                padding: 20px 12px;
+                cursor: pointer;
+                text-align: center;
+                
+            }   
+
+            .Button-Secondary--box:hover {
+
+                transform: scale(1.1);
+                transition: ease-in-out 0.2s;
+                
+                
+            }   
+        }
+
+
+
+        .Button-Disabled  {
+
+            .Button-Disabled--Header {
+                color: #667085;
+            }
+
+
+            .Button-Disabled--box {
+
+                background-color: gray;
+                color: black;
+                border-radius: 10px;
+                border: 1px solid #D0D5DD;
+                 padding: 20px 12px;
+                cursor: pointer;
+                text-align: center;
+
+            }
+
+            .Button-Disabled--box:hover {
+
+                transform: scale(1.1);
+                transition: ease-in-out 0.2s;
+                
+                
+            }   
+        }
+
+
+
+
+
+        .Button-Submitted  {
+
+            .Button-Submitted--Header {
+                color: red;
+            }
+
+
+            .Button-Submitted--box {
+
+                background-color: red;
+                color: lightgray;
+                border-radius: 10px;
+                border: 1px solid #D0D5DD;
+                 padding: 20px 12px;
+                cursor: pointer;
+                text-align: center;
+
+            }
+
+
+            .Button-Submitted--box:hover {
+
+                transform: scale(1.1);
+                transition: ease-in-out 0.2s;
+                
+                
+            }   
+        }
+
+
+
+        
+    </style>
+
+
+</head>
+<body>
+
+    <section class="Button-Layout-Container">
+
+
+        <section class="Assignmenet-Header">
+
+            <h1>Assignment 1 - Button Components</h1>
+        </section>
+
+
+        <div class="Button-container" >
+
+
+
+
+
+        <div class="Button-Primary" >
+
+            <h2 class="Button-Header--Primary">
+
+                Primary Button 
+
+
+            </h2>
+
+
+            <div class="Button-Primary--box">
+
+                click me
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="Button-Secondary" >
+
+            <h2 class="Button-Secondary--Header">
+
+                Secondary Button 
+
+
+            </h2>
+
+
+            <div class="Button-Secondary--box">
+
+
+                sign up
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="Button-Disabled" >
+
+            <h2 class="Button-Disabled--Header">
+
+
+                Disabled Button 
+
+
+            </h2>
+
+
+            <div class="Button-Disabled--box">
+
+
+                Sign up 
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="Button-Submitted" >
+
+
+            <h2 class="Button-Submitted--Header">
+
+                Submitted button 
+
+            </h2>
+
+
+            <div class="Button-Submitted--box">
+
+                Submitted 
+
+
+            </div>
+
+
+        </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+      
+    
+</body>
+</html>
